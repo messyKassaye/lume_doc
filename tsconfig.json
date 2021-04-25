@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      // must match .bablerc
+      "api/*": ["./app/api/*"],
+      "app/*": ["./app/react/*"],
+      "shared/*": ["./app/shared/*"],
+      "UI": ["./app/react/UI"],
+      "UI/*": ["./app/react/UI/*"]
+    }
+  },
+  "include": ["app", "external_modules", "database", "e2e"],
+  "exclude": ["node_modules", "**/node_modules/*", "fixtures", "dist", "prod"]
+}

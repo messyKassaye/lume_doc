@@ -1,0 +1,35 @@
+@import "../../scss/config/_colors.scss";
+@import "../../scss/config/_materials.scss";
+@import "../../scss/config/_typography.scss";
+
+.modal-dialog {
+	max-height: 90%;
+	overflow-y: scroll;
+
+	.btn-default {
+		opacity: 0.5;
+	}
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal-content {
+	border-radius: 0;
+	border: 0;
+  box-shadow: $box-shadow;
+}
+
+.modal-success {
+	border-left: 5px solid #8BC74C;
+}
+.modal-info {
+	border-left: 5px solid #cce5ff;
+}
+.modal-warning {
+	border-left: 5px solid orange;
+}
+.modal-danger {
+	border-left: 5px solid #ED353D;
+}

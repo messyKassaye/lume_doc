@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormatMetadata should render Metadata component passing the formatted metadata 1`] = `
+<Metadata
+  compact={true}
+  groupGeolocations={false}
+  highlight={Array []}
+  metadata={
+    Array [
+      Object {
+        "formated": "metadata",
+      },
+    ]
+  }
+  renderLabel={[Function]}
+/>
+`;
+
+exports[`FormatMetadata should unshift additional metadata if passed 1`] = `
+<Metadata
+  compact={false}
+  groupGeolocations={false}
+  highlight={Array []}
+  metadata={
+    Array [
+      Object {
+        "more": "data",
+      },
+      Object {
+        "and": "more",
+      },
+      Object {
+        "indexInTemplate": 0,
+        "label": undefined,
+        "name": "preview",
+        "noLabel": false,
+        "style": "contain",
+        "translateContext": "template",
+        "type": "image",
+        "value": "/api/files/docId.jpg",
+      },
+    ]
+  }
+  renderLabel={[Function]}
+/>
+`;

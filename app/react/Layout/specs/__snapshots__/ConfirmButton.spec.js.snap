@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmButton on click onAccept should execute action and close modal 1`] = `
+<Fragment>
+  <button
+    className="class"
+    onClick={[Function]}
+    type="button"
+  >
+    text
+  </button>
+</Fragment>
+`;
+
+exports[`ConfirmButton on click onCancel should should close modal 1`] = `
+<Fragment>
+  <button
+    className="class"
+    onClick={[Function]}
+    type="button"
+  >
+    text
+  </button>
+</Fragment>
+`;
+
+exports[`ConfirmButton on click should render a Confirm modal 1`] = `
+<Fragment>
+  <button
+    className="class"
+    onClick={[Function]}
+    type="button"
+  >
+    text
+  </button>
+  <ConfirmModal
+    isOpen={true}
+    message="Are you sure you want to continue?"
+    onAccept={[Function]}
+    onCancel={[Function]}
+    title="Confirm action"
+    type="danger"
+  />
+</Fragment>
+`;
+
+exports[`ConfirmButton should render a button 1`] = `
+<Fragment>
+  <button
+    className="class"
+    onClick={[Function]}
+    type="button"
+  >
+    text
+  </button>
+</Fragment>
+`;

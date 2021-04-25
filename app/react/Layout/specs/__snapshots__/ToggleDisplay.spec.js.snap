@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleDisplay on hide button click should render hide children 1`] = `
+<Fragment>
+  <button
+    onClick={[Function]}
+  >
+    show
+  </button>
+</Fragment>
+`;
+
+exports[`ToggleDisplay on show button click should render children passed and hide button 1`] = `
+<Fragment>
+  <button
+    onClick={[Function]}
+  >
+    hide
+  </button>
+  <span>
+    children
+  </span>
+</Fragment>
+`;
+
+exports[`ToggleDisplay should not render children by default 1`] = `
+<Fragment>
+  <button
+    onClick={[Function]}
+  >
+    show
+  </button>
+</Fragment>
+`;
+
+exports[`ToggleDisplay should render labels passed for buttons 1`] = `
+<button
+  onClick={[Function]}
+>
+  showLabel
+</button>
+`;
+
+exports[`ToggleDisplay should render labels passed for buttons 2`] = `
+<button
+  onClick={[Function]}
+>
+  hideLabel
+</button>
+`;
+
+exports[`ToggleDisplay when passed open true should show the children by default 1`] = `
+<Fragment>
+  <button
+    onClick={[Function]}
+  >
+    hide
+  </button>
+  <span>
+    children
+  </span>
+</Fragment>
+`;

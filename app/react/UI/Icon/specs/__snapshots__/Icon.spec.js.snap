@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon should allow configuring the icon as directionAware 1`] = `
+<FontAwesomeIcon
+  border={false}
+  className=""
+  fixedWidth={false}
+  flip={null}
+  icon="angle-left"
+  inverse={false}
+  listItem={false}
+  mask={null}
+  pull={null}
+  pulse={false}
+  rotation={null}
+  size={null}
+  spin={false}
+  swapOpacity={false}
+  symbol={false}
+  title=""
+  transform={null}
+/>
+`;
+
+exports[`Icon should allow configuring the icon as directionAware 2`] = `
+<FontAwesomeIcon
+  border={false}
+  className=""
+  fixedWidth={false}
+  flip="horizontal"
+  icon="angle-left"
+  inverse={false}
+  listItem={false}
+  mask={null}
+  pull={null}
+  pulse={false}
+  rotation={null}
+  size={null}
+  spin={false}
+  swapOpacity={false}
+  symbol={false}
+  title=""
+  transform={null}
+/>
+`;
+
+exports[`Icon should instantiate a FontAwesomeIcon 1`] = `
+<FontAwesomeIcon
+  border={false}
+  className=""
+  fixedWidth={false}
+  flip={null}
+  icon="angle-right"
+  inverse={false}
+  listItem={false}
+  mask={null}
+  pull={null}
+  pulse={false}
+  rotation={null}
+  size="xs"
+  spin={false}
+  swapOpacity={false}
+  symbol={false}
+  title=""
+  transform={null}
+/>
+`;

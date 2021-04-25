@@ -1,0 +1,221 @@
+.attachment {
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  background: $c-white;
+  color: $c-grey-dark;
+  border-radius: 0;
+  width: 100%;
+  &:not(:first-of-type) {
+    border-top: 1px solid $c-grey-lighten;
+  }
+}
+
+.attachment-add {
+  padding: 0 15px;
+  margin-bottom: 10px;
+  label:not(:first-child) {
+    margin-left: 4px;
+  }
+}
+
+.attachment-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+}
+
+.attachment-thumbnail {
+  height: $header-height;
+  width: $header-height;
+  min-width: $header-height;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $c-grey-lighten;
+  color: $c-grey-dark !important;
+  margin-right: 15px;
+  border: 1px solid $c-grey-light !important;
+
+  .attachment-link:hover & {
+    border-color: $c-primary-light !important;
+    box-shadow: 0 0 0 2px $c-primary-light;
+  }
+
+  .fa {
+    font-size: $f-size;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.attachment-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 0; // flex overflow-hidden hack
+  span {
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: $f-size-sm;
+    color: $c-primary;
+    border-bottom: 1px solid $c-primary-light;
+
+    .attachment-link:hover & {
+      border-color: $c-primary;
+    }
+
+    &.attachment-size {
+      display: block;
+      color: $c-grey;
+      border-bottom: none;
+      margin-top: 5px;
+    }
+  }
+}
+
+.attachment-buttons {
+  width: 85px;
+  text-align: right;
+  white-space: nowrap;
+
+  .item-shortcut {
+    opacity: 1 !important;
+    border-style: solid !important;
+    top: 0;
+  }
+}
+
+.main-file {
+  text-align: left;
+  .btn {
+    margin-left: 15px;
+  }
+}
+
+.attachment {
+  .form-group {
+    margin: 0;
+  }
+  .input-group {
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: 90%;
+  }
+}
+
+.set-language {
+  display: flex;
+  align-items: center;
+  margin-top: 5px !important;
+
+  label {
+    margin-right: 5px;
+  }
+
+  .form-control {
+    -webkit-appearance: menulist-button;
+    height: 20px;
+    padding: 0px;
+  }
+}
+
+.entity-viewer {
+  @media (min-width: 1024px) {
+    .attachments-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 15px;
+    }
+    .attachment {
+      border: 1px solid $c-grey-lighten;
+      width: 50%;
+      padding: 0 12px;
+    }
+  }
+  a.btn {
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+}
+
+#upload-button-input,
+#upload-attachment-all-input,
+#upload-attachment-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+
+.upload-button:focus,
+.upload-button:focus-within,
+label.add:focus,
+label.add:focus-within {
+  background: $c-type-19;
+  border-color: $c-black;
+}
+
+.attachments {
+  &-list {
+    &-parent {
+      border-top: 1px solid #f2f2f4;
+      margin-top: 15px;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 4px;
+
+      h2 {
+        margin-top: 6px;
+      }
+    }
+  }
+
+  &-dropdown {
+    margin-left: 10px;
+
+    &-toggle {
+      border-radius: 15px;
+      min-width: 30px;
+      height: 30px;
+      padding: 0;
+      text-align: center;
+    }
+
+    .dropdown-menu {
+      top: 0;
+
+      li {
+        a,
+        button {
+          padding: 5px 14px;
+          border: none;
+          background-color: transparent;
+          color: #333333;
+
+          &.is--delete {
+            color: #b2452d;
+          }
+
+          svg {
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.attachments-list-parent {
+  margin-bottom: 64px;
+
+  .attachments-list-header {
+    align-items: center;
+  }
+}

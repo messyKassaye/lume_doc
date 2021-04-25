@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectFilter should render a text filter field with a label and passing the model 1`] = `
+<ul
+  className="search__filter is-active"
+>
+  <li>
+    label
+  </li>
+  <li
+    className="wide"
+  >
+    <LookupMultiSelect
+      lookup={null}
+      model="model.values"
+      onChange={[Function]}
+      options={
+        Array [
+          "options",
+        ]
+      }
+      prefix=""
+      sort={false}
+      totalPossibleOptions={0}
+    />
+  </li>
+</ul>
+`;
+
+exports[`SelectFilter when showBoolSwitch should render the and/or bool switch 1`] = `
+<ul
+  className="search__filter is-active"
+>
+  <li>
+    label
+    <Switcher
+      model="model.and"
+      onChange={[Function]}
+      prefix="prefix"
+    />
+  </li>
+  <li
+    className="wide"
+  >
+    <LookupMultiSelect
+      lookup={null}
+      model="model.values"
+      onChange={[Function]}
+      options={
+        Array [
+          "options",
+        ]
+      }
+      prefix="prefix"
+      sort={false}
+      totalPossibleOptions={0}
+    />
+  </li>
+</ul>
+`;
+
+exports[`SelectFilter when sort prop is set to true should activate sorting in the MultiSelect 1`] = `
+<ul
+  className="search__filter is-active"
+>
+  <li>
+    label
+  </li>
+  <li
+    className="wide"
+  >
+    <LookupMultiSelect
+      lookup={null}
+      model="model.values"
+      onChange={[Function]}
+      options={
+        Array [
+          "options",
+        ]
+      }
+      prefix=""
+      sort={true}
+      totalPossibleOptions={0}
+    />
+  </li>
+</ul>
+`;

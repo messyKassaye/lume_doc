@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`entities /api/entities/count_by_template should have a validation schema 1`] = `
+Object {
+  "children": Object {
+    "templateId": Object {
+      "flags": Object {
+        "presence": "required",
+      },
+      "invalids": Array [
+        "",
+      ],
+      "rules": Array [
+        Object {
+          "arg": Object {
+            "pattern": /\\^\\[0-9a-fA-F\\]\\{24\\}\\$/,
+          },
+          "name": "regex",
+        },
+      ],
+      "type": "string",
+    },
+  },
+  "flags": Object {
+    "presence": "required",
+  },
+  "type": "object",
+}
+`;
+
+exports[`entities DELETE /api/entities should have a validation schema 1`] = `
+Object {
+  "children": Object {
+    "sharedId": Object {
+      "flags": Object {
+        "presence": "required",
+      },
+      "invalids": Array [
+        "",
+      ],
+      "type": "string",
+    },
+  },
+  "flags": Object {
+    "presence": "required",
+  },
+  "type": "object",
+}
+`;
+
+exports[`entities GET should have a validation schema 1`] = `
+Object {
+  "children": Object {
+    "_id": Object {
+      "invalids": Array [
+        "",
+      ],
+      "type": "string",
+    },
+    "omitRelationships": Object {
+      "type": "any",
+    },
+    "sharedId": Object {
+      "invalids": Array [
+        "",
+      ],
+      "type": "string",
+    },
+    "withPdfInfo": Object {
+      "invalids": Array [
+        "",
+      ],
+      "type": "string",
+    },
+  },
+  "flags": Object {
+    "presence": "required",
+  },
+  "type": "object",
+}
+`;
+
+exports[`entities POST /api/entities/bulkdelete should have a validation schema 1`] = `
+Object {
+  "children": Object {
+    "sharedIds": Object {
+      "flags": Object {
+        "presence": "required",
+        "sparse": false,
+      },
+      "items": Array [
+        Object {
+          "invalids": Array [
+            "",
+          ],
+          "type": "string",
+        },
+      ],
+      "type": "array",
+    },
+  },
+  "flags": Object {
+    "presence": "required",
+  },
+  "type": "object",
+}
+`;

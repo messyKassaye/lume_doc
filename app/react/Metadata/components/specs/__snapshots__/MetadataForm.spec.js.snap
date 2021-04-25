@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MetadataForm should render title field as a textarea 1`] = `
+<Modeled(Connect(Field))
+  model=".title"
+>
+  <textarea
+    className="form-control"
+  />
+</Modeled(Connect(Field))>
+`;
